@@ -1,0 +1,106 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px; 
+}
+
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414; 
+}
+
+.experiencia-titulo {
+  display: block;
+  margin-bottom: 20px; 
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #141414; 
+}
+
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.skills::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 120px;
+  background: linear-gradient(#4d15a0, #95d861);
+  position: absolute;
+  top: 3px;
+  left: -6px;
+}
+
+.skill-titulo {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.skills-texto {
+  margin-bottom: 20px;
+}
+
+.skills-lista { 
+  color:#141414;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 2px;  
+}
+
+.skills-lista_habilidades {
+  color:#141414;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 2px;  
+}
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px; 
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+    text-align: center;
+  }
+  .experiencia-titulo {
+    text-align: center;
+  }
+  .experiencia-texto {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+ }
+
+ @media (max-width: 768px) {
+   .experiencia-texto {
+     display: block;
+     margin: 0 auto;
+    margin-bottom: 40px;
+
+   }
+ }
+  
